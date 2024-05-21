@@ -4,16 +4,16 @@
 
 <head>
     <meta charset="utf-8">
-    <title>SportsNews / Inscription</title>
+    <title>SportsNews / Accueil</title>
     <script src="https://kit.fontawesome.com/b92d11c922.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="base.css">
     <link rel="stylesheet" href="header.css">
-    <link rel="stylesheet" href="form.css">
+    <link rel="stylesheet" href="articles.css">
 </head>
 
 <body>
-    <div class="header header__otherpage">
+    <div class="header">
         <div class="header__texture"></div>
         <div class="header__mask">
             <svg width="100%" height="100%" viewBox="0 0 100 100" preserveAspectRatio="none">
@@ -36,41 +36,38 @@
             </div>
             <div class="header__slogan">
                 <h1 class="header__slogan--title">Bienvenue sur SportsNews, le site dédié aux articles sportifs</h1>
-                <br> <br> <br> <br> <br>
+                <br> <br> <br> <br> <br> <br> <br> <br>
                 <a href="" class="header__slogan--bottom">Contactez-moi</a>
             </div>
-        </div>
-    </div>
 
-    <div class="container">
-        <div class="form">
-            <div class="form__title">Inscription</div>
-            <form method="POST" action="traitementinscription.php">
-                <form class="form__inner">
-                    <div class="form__line">
-                        <div class="form__block">
-                            <h4 class="form__label">Nom</h4>
-                            <input class="form__input" type="text" id="nom" name="nom">
+            <br> <br> <br> <br> <br> <br>
+
+            <div class="articles">
+                <div class="container">
+                    <h2 class="articles__title">Articles</h2>
+                    <div class="articles__items">
+                        <div class="article" style="background: url(../Evaluation-diagnostique/articles.rugby.jpg); background-size: cover;">
+                            <div class="article__filter"></div>
+                            <div class="article__name">Ceci est un article sur le rugby</div>
+                            <div class="article__icon"><i class="fas fa-play"></i></div>
+
                         </div>
-                        <div class="form__block">
-                            <h4 class="form__label">Prénom</h4>
-                            <input class="form__input" type="text" id="prénom" name="prénom">
+                        <div class="article" style="background: url(../Evaluation-diagnostique/articles.24h.jpg); background-size: cover;">
+                            <div class="article__filter"></div>
+                            <div class="article__name">Ceci est un article sur les 24H du Mans</div>
+                            <div class="article__icon"><i class="fas fa-play"></i></div>
+
+                        </div>
+                        <div class="article" style="background: url(../Evaluation-diagnostique/articles.JO.jpg); background-size: cover;">
+                            <div class="article__filter"></div>
+                            <div class="article__name">Ceci est un article sur les JO</div>
+                            <div class="article__icon"><i class="fas fa-play"></i></div>
+
                         </div>
                     </div>
-                    <div class="form__line">
-                        <div class="form__block">
-                            <h4 class="form__label">Email</h4>
-                            <input class="form__input" type="text" id="email" name="email">
-                        </div>
-                        <div class="form__block">
-                            <h4 class="form__label">Mot de passe</h4>
-                            <input class="form__input" type="password" id="password" name="password">
-                        </div>
-                    </div>
-                    <input class="header__slogan--bottom" value="M'inscrire" type="submit" name="ok">
-                </form>
-        </div>
-    </div>
+                </div>
+
+            </div>
 
 </body>
 
